@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Andale Mono', monospace;
+	text-align: center;
+	color: white;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background: #3E1C00;
+	position: fixed;
+}
+
+.logo {
+	width: 30%;
+	float: left;
+	text-align: left;
+	line-height: 50px;
+}
+
+.logo p {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+nav {
+	float: right;
+	line-height: 50px;
+}
+
+nav a {
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-size: 20px;
+	color: white;
+	padding: 36px 10px;
+	margin: 0 1px;
+}
+
+nav a:hover {
+	background: white;
+	color: black;
+	font-weight: 700;
+}
+
+a {
+	color: white;
+}
+
+.banner-area {
+	background-image: url(library.jpg);
+	background-size: cover;
+	top: 50px;
+	height: 100vh;
+	position: fixed;
+}
+
+.banner-area:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.banner-area h1 {
+	padding-top: 4%;
+	padding-bottom: 2%;
+	font-size: 50px;
+}
+
+.banner-area p {
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content-area {
+	width: 100%;
+	height: 3520px;
+	position: relative;
+	background: black;
+	top: 300px;
+}
+
+.big_container {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 1000px;
+	height: 500px;
+	perspective: 2000px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container:hover > .card1 {
+	cursor: pointer;
+	transform: rotateY(180deg);
+}
+
+.card1 {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition: transform 1500ms;
+	transform-style: preserve-3d;
+}
+
+.front1, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front1 {
+	background-image: url(jesus.png);
+	background-size: cover;
+	background-position: top;
+}
+
+.back1 {
+	background-color: #3a3a3a;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.back1 p {
+	width: 90%;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.front2, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front2 {
+	background-image: url(einstein.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.front3, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front3 {
+	background-image: url(yangguo.jpeg);
+	background-size: cover;
+	background-position: top;
+}
+
+.front4, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front4 {
+	background-image: url(bakuman.jpeg);
+	background-size: cover;
+	background-position: top;
+}
+
+.front5, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front5 {
+	background-image: url(eminem.jpeg);
+	background-size: cover;
+	background-position: top;
+}
+
+.front6, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front6 {
+	background-image: url(jbp.jpeg);
+	background-size: cover;
+	background-position: top;
+}
+
+.front7, .back1 {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front7 {
+	background-image: url(yy.jpeg);
+	background-size: cover;
+	background-position: center;
+}
